@@ -1,0 +1,35 @@
+# Portable Windows distribution and generated build output
+/locales/
+/resources/
+/*.exe
+/*.dll
+/*.pak
+/*.bin
+/*.log
+/icudtl.dat
+/vk_swiftshader_icd.json
+/LICENSE.electron.txt
+/LICENSES.chromium.html
+
+# Keep the patch sources and repeatable checks in repair.
+/repair/*
+!/repair/features/
+!/repair/build_features.py
+!/repair/patch_ffmpeg_compat.py
+!/repair/verify_alignment.py
+!/repair/verify_censor_audio.py
+!/repair/verify_features.py
+!/repair/verify_ffmpeg_compat.py
+!/repair/verify_montage_trim.py
+!/repair/verify_secondary_sources.py
+!/repair/verify_speed_selection.py
+
+# Local settings, credentials and cache
+.env
+.env.*
+*.pem
+*.key
+*.sqlite*
+*.db
+__pycache__/
+*.pyc
